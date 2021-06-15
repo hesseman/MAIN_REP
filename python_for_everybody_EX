@@ -25,7 +25,6 @@ def normal():
     elif x < 40:
         pay = x * y
         print('Pay: ',float(pay))
-
 try:
     x = float(x)
     y = float(y)
