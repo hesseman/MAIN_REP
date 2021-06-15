@@ -61,9 +61,12 @@ print(suma)
 
 n = int(input('Podaj liczbę całkowitą większą od 0: '))
 suma = 0
-for i in range (1, n+1):
-    suma = suma + i
-print(suma)
+if n > 0:
+    for i in range (1, n+1):
+        suma = suma + i
+    print(suma)
+else:
+    print('Zła liczba została podana.')
 
 # ZAD. 6
 # Napisz program, który wczyta od użytkownika wielkość kąta w stopniach (w zakresie od 0 do 90) i wyświetli wartość sinusa, cosinusa i tangensa o ile dla danego kąta jest to możliwe. 
@@ -108,9 +111,6 @@ if x%2==0:
     print('Liczba jest parzysta.')
 else:
     print('Liczba nie jest parzysta.')
-
-# ZAD. 10
-# Napisz program, który prosi użytkownika o wprowadzenie zasolenia i temperatury wody morskiej, a następnie liczy jej gęstość umowną, za pomocą wzoru: σT= 28,152 - 0,0735*T +0,00469 *T*T+(0,802 - 0,002*T)*(S - 35). Jeżeli wprowadzona wartość temperatury będzie większa niż 30°C lub wartość zasolenia będzie większa niż 40 PSU, na ekranie powinna pojawić się informacja, że nie można policzyć umownej gęstości wody morskiej. 
 
 # ZAD. 11
 # Wysokość fali ekstremalnej to dwukrotność wysokości fali znacznej. Napisz program, który prosi użytkownika o podanie liczby całkowitej mniejszej od 10 (n) a następnie wypisuje na ekranie kolejne wartości fali znacznej i ekstremalnej z zakresu od 1 do n. 
@@ -181,7 +181,7 @@ for i in range (1, 50+1):
 # ZAD. 15 
 # Napisz program, który pyta użytkownika o podanie dowolnego ciągu znaków, następnie wypisuje na ekranie informację, ile znaków jest w tym ciągu. 
 
-x = input('Podaj dowolny ciąg znaków:')
+x = input('Podaj dowolny ciąg znaków: ')
 y = len(x)
 print('To jest liczba znaków w tym ciągu: ', y)
 
