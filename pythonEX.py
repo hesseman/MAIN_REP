@@ -10,7 +10,7 @@ if x >= 40:
 elif x < 40:
     pay = x * y
     print('Pay: ',pay)
-#===============================================================================================================
+
 # 03-02 EX Python For Everybody Course
 # Rewrite your pay program using try and except so that your program handles non-numeric input gracefully by printing a message and exiting the program. The following shows two executions of the program:
 
