@@ -69,3 +69,19 @@ while True:
 av = tot/num
 print('Total is:', tot,'.','Average is:', av,'.')
 
+# 06-05 EX Python For Everybody Course
+# Take the following Python code that stores a string:`
+# str = 'X-DSPAM-Confidence:0.8475'
+# Use find and string slicing to extract the portion of the string after the colon character and then use the float function to convert the extracted string into a floating point number.
+
+str = 'X-DSPAM-Confidence: 0.8475 '
+
+str1 = str.strip(' ')
+print(str1)
+
+af = str.find(':')
+print(af)
+
+fl = str1[af+1:]
+fl = float(fl)
+print(fl)
