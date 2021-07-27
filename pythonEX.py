@@ -85,3 +85,11 @@ print(af)
 fl = str1[af+1:]
 fl = float(fl)
 print(fl)
+
+# 07-01 EX Python For Everybody Course
+# Write a program to read through a file and print the contents of the file (line by line) all in upper case. Executing the program will look as follows:
+
+openfile = open('ex701.txt')
+for line in openfile:
+    sline = line.rstrip()
+    print(sline.upper())
